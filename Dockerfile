@@ -9,6 +9,9 @@ RUN <<MKDIRSENVVARS
   echo "export PATH=${HOME}/.local/bin:${PATH}" >> ${HOME}/.bashrc
   echo "export DIRENV_LOG_FORMAT=shell" >> ${HOME}/.bashrc
   echo "export AWS_VAULT_BACKEND=file" >> ${HOME}/.bashrc
+  echo "alias ll='ls -al'" >> ${HOME}/.bashrc
+  echo "alias python=python3" >> ${HOME}/.bashrc
+  echo "alias pip=pip3" >> ${HOME}/.bashrc
 MKDIRSENVVARS
 RUN <<BASIC
   dnf -y config-manager --set-enabled crb
