@@ -1,4 +1,4 @@
-FROM almalinux:8.10-minimal
+FROM almalinux:8.10
 
 ENV HOME="/root"
 
