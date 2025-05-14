@@ -33,6 +33,8 @@ RUN <<POETRY
   python3 -m ensurepip --upgrade && python3 -m pip install --user pipx
   . ${HOME}/.bashrc
   pipx install poetry
+  curl -LsSf https://astral.sh/uv/install.sh | sh -s -- -y
+  echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
 POETRY
 
 COPY tool-versions ${HOME}/.tool-versions
