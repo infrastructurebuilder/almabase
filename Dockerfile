@@ -1,7 +1,6 @@
-FROM almalinux:8.10
+FROM almalinux:8.10-minimal
 
-
-ENV HOME "/root"
+ENV HOME="/root"
 
 RUN <<MKDIRSENVVARS
   mkdir -p ${HOME}/.config
