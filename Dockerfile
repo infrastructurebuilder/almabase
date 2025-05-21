@@ -72,3 +72,4 @@ RUN <<ASDF
     asdf install aws-vault
     # export AWS_VAULT_FILE_PASSPHRASE=somepassword needs to be set
 ASDF
+COPY README.md ${HOME}/README.md
